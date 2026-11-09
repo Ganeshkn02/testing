@@ -164,7 +164,7 @@
 
     // The code to unlock the message (Anniversary Date: DDMM)
     // Date: 03, Month: 06 -> Code: 0306
-    const SECRET_CODE = '0306';
+    const SECRET_CODE = '2826';
 
     let state = {
         // loading, greeting, cake_start, cake_decorated, cake_lit, balloons_pop_up, birthday_questions, puzzle_locked, message_open, final_thank_you
@@ -472,7 +472,7 @@
     function renderPuzzleLocked() {
         const errorClass = state.puzzleError ? 'border-red-500 ring-red-500 animate-shake' : 'border-violet-500/50 ring-violet-500/30';
         // HINT CORRECTED: Reflects DDMM format
-        const errorMessage = state.puzzleError ? '<p class="text-red-400 mt-4 text-lg animate-pulse">🔒 Incorrect Code. Try again! (Hint: It\'s our love anniversary date and month - **DDMM**)</p>' : '';
+        const errorMessage = state.puzzleError ? '<p class="text-red-400 mt-4 text-lg animate-pulse">🔒 Incorrect Code. Try again! (Hint: It\'s our love anniversary date and year- **DDYY**)</p>' : '';
 
         return `
             ${renderBanner()}
@@ -501,7 +501,7 @@
     function renderMessageOpen() {
         const messageContent = `
 Happy Birthday, my favorite person in the world
-today is your birthday and i just wanted to wish you a happy birthday and i hope this year treats you well. i just want to say thank you for the part you played in my life. you were the first one i laughed the hardest with. the one to share all the secrets with. remember that time when you and i would stay on the phone with you for hours.You know you're my happiness, caring partner everything else and if in this world i had to choose between you or the world ill choose you only remember that,and wht happened today forget that ,no dont forget im still mad abt tht
+today is your birthday and i just wanted to wish you a happy birthday and i hope this year treats you well. i just want to say thank you for the part you played in my life. you were the first one i laughed the hardest with. the one to share all the secrets with. remember that time when you and i would stay on the phone with you for hours that was the bet time spent in my life.You know you're my happiness, caring partner everything else and if in this world i had to choose between you or the world ill choose you only remember that,and wht happened today forget that ,no dont forget im still mad abt tht
         `;
 
         // UPDATED: Reflects the 3 remaining questions
